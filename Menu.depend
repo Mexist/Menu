@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1425931490 source:c:\users\m.bezier\desktop\workspace\menu\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"jeu.h"
+
+1425931338 c:\users\m.bezier\desktop\workspace\menu\jeu.h
+
+1425745745 c:\users\m.bezier\desktop\workspace\menu\jeu.c
+	"jeu.h"
+
+1425931473 source:c:\users\m.bezier\desktop\workspace\menu\jeu.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"jeu.h"
+
