@@ -26,7 +26,14 @@ int main()
     do{                                                                         //début menu
 
             system("cls");
-            printf("=== Menu ===\n\n1_Jouer\n2_Option\n3_Aide\n4_Quitter\n\nVotre choix: ");
+
+            printf("=== Menu ===\n\n"\
+                   " 1_Jouer\n"\
+                   " 2_Option\n"\
+                   " 3_Aide\n"\
+                   " 4_Quitter\n\n"\
+                   "Votre choix: ");
+
             scanf("%1d",&choix);
             scanf("%*[^\n]");
             getchar();
@@ -43,7 +50,7 @@ int main()
                         system("cls");
                         printf("===Option:===\n");
                         Sleep(650);
-                        //option(&joueur);
+                        option(&joueur);
                         choix=0;
                         break;
                 case 3:

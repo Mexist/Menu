@@ -16,7 +16,7 @@
 	<windows.h>
 	"jeu.h"
 
-1426104394 source:c:\users\m.bezier\documents\github\menu\main.c
+1426104730 source:c:\users\m.bezier\documents\github\menu\main.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
@@ -35,7 +35,7 @@
 
 1426102703 c:\users\m.bezier\documents\github\menu\aide.h
 
-1426102968 c:\users\m.bezier\documents\github\menu\option.h
+1426105504 c:\users\m.bezier\documents\github\menu\option.h
 	"jeu.h"
 
 1426104638 source:c:\users\m.bezier\documents\github\menu\aide.c
@@ -43,6 +43,8 @@
 	<stdio.h>
 	<stdlib.h>
 
-1426102968 source:c:\users\m.bezier\documents\github\menu\option.c
+1426105535 source:c:\users\m.bezier\documents\github\menu\option.c
+	<stdio.h>
+	<stdlib.h>
 	"option.h"
 

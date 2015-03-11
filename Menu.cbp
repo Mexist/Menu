@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="aide.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="aide.h" />
 		<Unit filename="jeu.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -38,6 +42,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="option.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="option.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

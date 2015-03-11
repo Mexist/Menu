@@ -34,9 +34,9 @@ void presentation(PJoueur joueur){
 int choix_skill=0;
     do{system("cls");
     printf("Choisissez votre niveau de skill:\n"\
-           "1_Eleve\n"\
-           "2_Moyen\n"\
-           "3_Faible\n"\
+           " 1_Eleve\n"\
+           " 2_Moyen\n"\
+           " 3_Faible\n"\
            "Votre choix est: "
            );
     scanf("%d",&choix_skill);
@@ -83,10 +83,10 @@ void shifumi(PJoueur joueur){
           do{
                 system("cls");
                 printf("===SHIFUMI===\n"\
-                   "1_Pierre\n"\
-                   "2_Papier\n"\
-                   "3_Ciseaux\n"\
-                   "4_Retour\n\n"\
+                   " 1_Pierre\n"\
+                   " 2_Papier\n"\
+                   " 3_Ciseaux\n"\
+                   " 4_Retour\n\n"\
                    "Choix ordinateur effectue.\n\n"\
                    "Votre choix:");
             scanf("%d",&choix_shifumi);
@@ -126,10 +126,10 @@ void shifumi(PJoueur joueur){
           do{
                 system("cls");
                 printf("===SHIFUMI===\n"\
-                   "1_Pierre\n"\
-                   "2_Papier\n"\
-                   "3_Ciseaux\n"\
-                   "4_Retour\n\n"\
+                   " 1_Pierre\n"\
+                   " 2_Papier\n"\
+                   " 3_Ciseaux\n"\
+                   " 4_Retour\n\n"\
                    "Choix ordinateur effectue.\n\n"\
                    "Votre choix:");
             scanf("%d",&choix_shifumi);
@@ -207,9 +207,9 @@ void menu_jeu(PJoueur joueur){
             printf("Bienvenue %s        ", joueur->pseudo);
             printf("Votre score: %d\n\n", joueur->score);
             printf("===Menu de Jeu===\n"\
-                   "1_Nouveau\n"\
-                   "2_Shifumi\n"\
-                   "3_Retour\n"\
+                   " 1_Nouveau\n"\
+                   " 2_Shifumi\n"\
+                   " 3_Retour\n"\
                    "Votre choix:");
             scanf("%d",&choix_menu_jeu);
             system("cls");
