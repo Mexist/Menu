@@ -198,6 +198,7 @@ void shifumi(PJoueur joueur){
 }
 
 void menu_jeu(PJoueur joueur){
+    FILE *fichier;                                                              //enregistre score en sortie du menu
     int sortie=0;
     int choix_menu_jeu=0;
     joueur->score=0;
@@ -228,7 +229,13 @@ void menu_jeu(PJoueur joueur){
                         break;
                 case TROIS:
                         system("cls");
+                        fichier=fopen("score.txt","w");
+                        if(fichier!=NULL){
+                          fprintf(fichier,"%s %d",joueur->pseudo, joueur->score);
+                          fclose(fichier);
+                        }
                         Sleep(200);
+
                         sortie=1;
                         break;
                 default:
