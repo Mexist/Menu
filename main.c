@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+
 #include "jeu.h"
+#include "aide.h"
+#include "option.h"
+
+
 
 int main()
 {
@@ -19,10 +24,12 @@ int main()
     //int option=0;
 
     do{                                                                         //début menu
-            system("cls");
-            printf("=== Menu ===\n\n1_Jouer\n2_Option\n3_Aide\n4_Quitter\n");
-            scanf("%d",&choix);
 
+            system("cls");
+            printf("=== Menu ===\n\n1_Jouer\n2_Option\n3_Aide\n4_Quitter\n\nVotre choix: ");
+            scanf("%1d",&choix);
+            scanf("%*[^\n]");
+            getchar();
 
             switch (choix){
                 case 1:
@@ -30,16 +37,21 @@ int main()
                         printf("C'est parti!\n");
                         Sleep(650);
                         menu_jeu(&joueur);
+                        choix=0;
                         break;
                 case 2:
                         system("cls");
                         printf("===Option:===\n");
                         Sleep(650);
+                        //option(&joueur);
+                        choix=0;
                         break;
                 case 3:
                         system("cls");
                         printf("===Aide===\n");
-                        Sleep(650);
+                        Sleep(400);
+                        aide();
+                        choix=0;
                         break;
                 case 4:
                         system("cls");

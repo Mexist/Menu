@@ -16,11 +16,33 @@
 	<windows.h>
 	"jeu.h"
 
-1425931490 source:c:\users\m.bezier\documents\github\menu\main.c
+1426104394 source:c:\users\m.bezier\documents\github\menu\main.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	"jeu.h"
+	"aide.h"
+	"option.h"
 
 1425931338 c:\users\m.bezier\documents\github\menu\jeu.h
+
+1426101329 source:c:\users\m.bezier\documents\github\menu\jeu.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	"jeu.h"
+
+1426102703 c:\users\m.bezier\documents\github\menu\aide.h
+
+1426102968 c:\users\m.bezier\documents\github\menu\option.h
+	"jeu.h"
+
+1426104638 source:c:\users\m.bezier\documents\github\menu\aide.c
+	"aide.h"
+	<stdio.h>
+	<stdlib.h>
+
+1426102968 source:c:\users\m.bezier\documents\github\menu\option.c
+	"option.h"
 
