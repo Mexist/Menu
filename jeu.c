@@ -15,6 +15,17 @@
                 printf("\t\t\t  ^\n"\
                        "\t\t\t< O >\n"\
                        "\t\t\t  v\n\n");
+<<<<<<< HEAD
+=======
+
+#define CIS_PAP printf("Les ciseaux coupent le papier\n\n\n");\
+                printf("\t\t\t--->\%%---\n\n");
+#define PIE_CIS printf("La pierre casse les ciseaux\n\n\n");\
+                printf("\t\t\t    /\n"\
+                       "\t\t\t %%<O\n"\
+                       "\t\t\t    \\\n\n");
+
+>>>>>>> origin/master
 
 #define CIS_PAP printf("Les ciseaux coupent le papier\n\n\n");\
                 printf("\t\t\t--->\%%---\n\n");
