@@ -11,9 +11,18 @@
 #define CHOIX_MIN   1
 #define CHOIX_MAX   4
 
-#define PAP_PIE printf("Le papier enveloppe la pierre\n")
-#define CIS_PAP printf("Les ciseaux coupent le papier\n")
-#define PIE_CIS printf("La pierre casse les ciseaux\n")
+#define PAP_PIE printf("Le papier enveloppe la pierre\n\n\n");\
+                printf("\t\t\t  ^\n"\
+                       "\t\t\t< O >\n"\
+                       "\t\t\t  v\n\n");
+
+#define CIS_PAP printf("Les ciseaux coupent le papier\n\n\n");\
+                printf("\t\t\t--->\%%---\n\n");
+#define PIE_CIS printf("La pierre casse les ciseaux\n\n\n");\
+                printf("\t\t\t    /\n"\
+                       "\t\t\t %%<O\n"\
+                       "\t\t\t    \\\n\n");
+
 
 void presentation(PJoueur joueur){
     int i;
