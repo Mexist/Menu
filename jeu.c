@@ -11,12 +11,21 @@
 #define CHOIX_MIN   1
 #define CHOIX_MAX   4
 
-#define PAP_PIE printf("Le papier enveloppe la pierre\n")
-#define CIS_PAP printf("Les ciseaux coupent le papier\n")
-#define PIE_CIS printf("La pierre casse les ciseaux\n")
+#define PAP_PIE printf("Le papier enveloppe la pierre\n\n\n");\
+                printf("\t\t\t  ^\n"\
+                       "\t\t\t< O >\n"\
+                       "\t\t\t  v\n\n");
 
-void presentation(PJoueur joueur){
-    int i;
+#define CIS_PAP printf("Les ciseaux coupent le papier\n\n\n");\
+                printf("\t\t\t--->\%%---\n\n");
+#define PIE_CIS printf("La pierre casse les ciseaux\n\n\n");\
+                printf("\t\t\t    /\n"\
+                       "\t\t\t %%<O\n"\
+                       "\t\t\t    \\\n\n");
+
+
+void presentation(PJoueur joueur){                      //Nouveau dans menu jeu
+    int i;                                              //entrer le pseudo
     for(i=0; i<PSEUDO_END_MARKER+1; i++) {
         joueur->pseudo[i]='\0';
     }
@@ -31,7 +40,7 @@ void presentation(PJoueur joueur){
     printf("Votre pseudo est: %s", joueur->pseudo);
 
 
-int choix_skill=0;
+int choix_skill=0;                                      //choisir niveau de skill
     do{system("cls");
     printf("Choisissez votre niveau de skill:\n"\
            " 1_Eleve\n"\
@@ -70,16 +79,16 @@ int choix_skill=0;
 }
 
 
-void shifumi(PJoueur joueur){
+void shifumi(PJoueur joueur){                                       //Shifumi dans niveau jeu
     int choix_shifumi;
     int choix_pc;
     int sortie=0;
 
-    int rand_a_b(int a, int b){ //fonction random a<b et intervalle [a;b[
+    int rand_a_b(int a, int b){                                     //fonction random a<b et intervalle [a;b[
     return rand()%(b-a) +a;
     }
 
-    if(joueur->option==0){
+    if(joueur->option==0){                                          //Mode impossible
           do{
                 system("cls");
                 printf("===SHIFUMI===\n"\
@@ -122,9 +131,9 @@ void shifumi(PJoueur joueur){
             }
         }while(sortie==0);
     }
-    else{
+    else{                                                                   //Mode random
           do{
-                system("cls");
+                system("cls");                                              //affiche choix
                 printf("===SHIFUMI===\n"\
                    " 1_Pierre\n"\
                    " 2_Papier\n"\
@@ -135,7 +144,7 @@ void shifumi(PJoueur joueur){
             scanf("%d",&choix_shifumi);
             system("cls");
 
-            srand(time(NULL));
+            srand(time(NULL));                                      //choix pc
             choix_pc=rand_a_b(CHOIX_MIN,CHOIX_MAX);
 
 
@@ -197,13 +206,13 @@ void shifumi(PJoueur joueur){
 
 }
 
-void menu_jeu(PJoueur joueur){
+void menu_jeu(PJoueur joueur){                                                  //Jouer Menu principal
     FILE *fichier;                                                              //enregistre score en sortie du menu
     int sortie=0;
     int choix_menu_jeu=0;
     joueur->score=0;
 
-    do{                                                                         //début menu
+    do{                                                                         //Menu jeu
             system("cls");
             printf("Bienvenue %s        ", joueur->pseudo);
             printf("Votre score: %d\n\n", joueur->score);

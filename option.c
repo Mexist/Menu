@@ -3,10 +3,10 @@
 #include <windows.h>
 #include "option.h"
 
-void option(PJoueur joueur){
+void option(PJoueur joueur){                                                    //Option dans Menu principal
     int sortie=0;
     int choix=0;
-    do{                                                                         //début menu
+    do{                                                                         //Choix skill
             system("cls");
             printf("Niveau de skill:\n"\
                     " 1_Eleve\n"\

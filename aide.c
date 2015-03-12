@@ -11,7 +11,7 @@ void aide(){
         printf("Pour commencer a jouer créer un nouveau pseudo et choisissez votre niveau. Vous pouvez a tout moment le modifier dans les options.\n");
         printf("Entrez c pour revenir au menu\n ");
 
-        scanf("%1c", &sortir[0]);
+        scanf("%1c", &sortir[0]);               //lettre de sortie
         scanf("%*[^\n]");
         getchar();
     }while(sortir[0]!='c');
